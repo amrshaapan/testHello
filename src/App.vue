@@ -2,6 +2,8 @@
   <div id="app">
     <nav>
       <router-link to="/">Home_Hello</router-link> |
+      <router-link to="/">Home_Hello</router-link> |
+      <router-link to="/">Home_Hello</router-link> |
       <router-link to="/about">About</router-link>
     </nav>
     <router-view/>
@@ -23,7 +25,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #ec0909;
+
 }
 
 nav {
