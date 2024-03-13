@@ -2,11 +2,10 @@
   <div id="app">
     <nav>
       <router-link to="/">Home_Amr</router-link> |
-      <router-link to="/">Home_Amr_Badawy</router-link> |
-      <router-link to="/">Home_Amr_Badawy</router-link> |
 
-      <router-link to="/about">About</router-link>
-      <router-link to="/about">About</router-link>
+      <p>home page </p>
+      <p>home page </p>
+      <p>home page one </p>
     </nav>
     <router-view/>
   </div>
