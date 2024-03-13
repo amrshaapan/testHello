@@ -21,7 +21,11 @@ window.Echo = new Echo({
     wsPort: 6001,
     cluster:'mt1',
     forceTLS: false,
-    disableStats:true
+    disableStats:true,
+
+    wssPort: 6001,
+
+    enabledTransports: ['ws', 'wss'],
 
 });
 
