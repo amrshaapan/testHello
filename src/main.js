@@ -26,7 +26,7 @@ window.Echo = new Echo({
 
     wssPort: 6001,
 
-    enabledTransports: ['ws', 'wss'],
+    enabledTransports: ['ws'],
 
 });
 
