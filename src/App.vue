@@ -3,7 +3,7 @@
     <nav>
       <router-link to="/">Home_Amr</router-link> |
 
-      <p>home page </p>
+      <p>{{all}}</p>
       <p>home page </p>
       <p>home page one </p>
     </nav>
@@ -12,10 +12,18 @@
 </template>
 <script>
 export default {
+ data() {
+            return {
+
+                all: []
+            }
+        },
   mounted () {
     window.Echo.channel('channel')
     .listen('Hello' , (e) => {
-     console.log(e);
+
+     this.all = e
+       console.log(e);
     })
   }
 }
