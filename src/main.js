@@ -12,10 +12,11 @@ Vue.config.productionTip = false
 import Echo from 'laravel-echo';
 
 
-window.Pusher = require('pusher-js');
+// window.Pusher = require('pusher-js');
+window.io = require('socket.io-client');
 
 window.Echo = new Echo({
-    broadcaster: 'pusher',
+    broadcaster: 'socket.io',
     key: process.env.VUE_APP_WEBSOCKETS_KEY,
     Host: process.env.VUE_APP_WEBSOCKETS_SERVER,
     // wssHost: process.env.VUE_APP_WEBSOCKETS_SERVER,
@@ -26,7 +27,7 @@ window.Echo = new Echo({
 
     // wssPort: 6001,
 
-    enabledTransports: ['ws'],
+    // enabledTransports: ['ws'],
 
 });
 
