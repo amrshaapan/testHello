@@ -20,12 +20,12 @@ window.Echo = new Echo({
     key: process.env.VUE_APP_WEBSOCKETS_KEY,
     wsHost: process.env.VUE_APP_WEBSOCKETS_SERVER,
     wssHost: process.env.VUE_APP_WEBSOCKETS_SERVER,
-    wsPort: 3080,
+    wsPort: 6001,
     cluster:'mt1',
     forceTLS: false,
 
 
-    wssPort: 3080,
+    wssPort: 6001,
 
     enabledTransports: ['ws','wss'],
 
