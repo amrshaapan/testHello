@@ -22,8 +22,9 @@ window.Echo = new Echo({
     wssHost: process.env.VUE_APP_WEBSOCKETS_SERVER,
     wsPort: 6001,
     cluster:'mt1',
-    forceTLS: false,
-
+    // forceTLS: false,
+    disableStats: true,
+    forceTLS: true,
 
     wssPort: 6001,
 
