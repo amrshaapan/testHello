@@ -19,16 +19,16 @@ window.Echo = new Echo({
     broadcaster: 'pusher',
     key: process.env.VUE_APP_WEBSOCKETS_KEY,
     wsHost: process.env.VUE_APP_WEBSOCKETS_SERVER,
-    // wssHost: process.env.VUE_APP_WEBSOCKETS_SERVER,
+    wssHost: process.env.VUE_APP_WEBSOCKETS_SERVER,
     wsPort: 6001,
     cluster:'mt1',
     forceTLS: false,
-    disableStats: true,
+    // disableStats: true,
     // forceTLS: true,
 
-    // wssPort: 6001,
+    wssPort: 6001,
 
-    // enabledTransports: ['ws','wss'],
+    enabledTransports: ['ws','wss'],
 
 });
 
